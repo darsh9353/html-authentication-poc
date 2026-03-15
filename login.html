@@ -3,22 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
          
     </head>
     <body>
-        <center>
-        <h2>login</h2>
+
+        
+            <div id="loginpage">
+        <h1 id="h1login">login</h1>
         <form >
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" class="in" name="username" required>
             <br><br>
 
             <label for="pass">Password:</label>
-            <input type="password" name="password" id="pass" required>
+            <input type="password" name="password" class="in"  id="pass" required>
             <br><br>
+            <div id="ll">
 
             <a href="dashboard.html">
-            <input type="button" value="Login">
+            <input type="button" value="Login" id="login">
             </a>
 
             <br>
@@ -29,11 +33,14 @@
             <br>
             <br>
             <a href="register.html">Create new Account</a>
+            </div>
 
 
 
+        
 
         </form>
-        </center>
+        </div>
+        
     </body>
 </html>
