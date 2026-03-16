@@ -1,0 +1,73 @@
+/* styles.css - Custom styles for authentication system */
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+}
+
+.card {
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12), 0 1.5px 6px rgba(44, 62, 80, 0.08);
+    border-radius: 1rem;
+    transition: box-shadow 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18), 0 3px 12px rgba(44, 62, 80, 0.12);
+}
+
+.btn-primary, .btn-success, .btn-danger, .btn-warning, .btn-info {
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-info:hover {
+    filter: brightness(0.95);
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input.form-control, select.form-control, textarea.form-control {
+    border-radius: 0.5rem;
+    border: 1.5px solid #b2bec3;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+}
+
+/* Custom spacing */
+.mt-6 { margin-top: 4rem !important; }
+.mb-6 { margin-bottom: 4rem !important; }
+.pt-6 { padding-top: 4rem !important; }
+.pb-6 { padding-bottom: 4rem !important; }
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+    .card {
+        margin: 1rem 0.5rem;
+    }
+}
+
+/* Custom navbar color */
+.navbar-custom {
+    background: linear-gradient(90deg, #0d6efd 0%, #6a82fb 100%);
+}
+
+/* Password toggle icon */
+.input-group-text {
+    cursor: pointer;
+}
